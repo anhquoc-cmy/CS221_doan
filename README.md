@@ -62,7 +62,7 @@ Sau đó truy cập http://localhost:8888 để sử dụng giao diện demo.
 
 ## Video Demo
 
-
+Tìm câu tương đồng với câu được nhập vào.
 
 https://github.com/user-attachments/assets/1c74e2ef-8e38-411f-ba6f-957306ccf40a
 
