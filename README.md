@@ -21,13 +21,13 @@
 * **Năm học:** HK1 (2025 - 2026)
 * **Giảng viên**: TS.Nguyễn Thị Quý 
 
-📖 Tổng quan dự án
+##Tổng quan dự án
 Đồ án môn học CS221, tập trung nghiên cứu mô hình SimCSE (Simple Contrastive Learning of Sentence Embeddings). 
 
 Mục tiêu chính của nhóm là tái hiện lại kết quả huấn luyện theo paper gốc và xây dựng ứng dụng thực tế để kiểm tra chất lượng vector embeddings.
 
 
-🧠 Huấn luyện mô hình (Training)
+##Huấn luyện mô hình (Training)
 Chạy 4 file notebook trong thư mục train/ trên Kaggle là đủ. Không cần cài đặt gì thêm.
 
 train/ 
@@ -64,5 +64,3 @@ Dự án này dựa trên mã nguồn và nghiên cứu từ:
 SimCSE: Simple Contrastive Learning of Sentence Embeddings (Gao et al., EMNLP 2021)
 
 GitHub: princeton-nlp/SimCSE
-<!-- Footer -->
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`Copyright © 2021 - Đỗ Trọng Khánh`
