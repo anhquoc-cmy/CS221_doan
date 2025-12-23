@@ -50,7 +50,7 @@ Từ thư mục gốc, chạy lệnh sau để khởi động demo:
   cd demo
 
   # tải thư viện cần thiết
-  pip install -r requirements
+  pip install -r requirements.txt
 
   # chạy backend bằng Flask
   python flaskdemo.py --model_name_or_path "princeton-nlp/sup-simcse-bert-base-uncased"
