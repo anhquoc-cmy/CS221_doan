@@ -27,12 +27,6 @@
 Mục tiêu chính của nhóm là tái hiện lại kết quả huấn luyện theo paper gốc và xây dựng giao diện trực quan để kiểm tra kết quả học của model.
 
 
-## Video Demo
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=cs221_demo_nhom8" target="_blank">
-    <img src="https://img.youtube.com/vi/cs221_demo_nhom8/0.jpg" alt="CS221 Demo Nhóm 8" width="480">
-  </a>
-</p>
 
 
 ## Huấn luyện mô hình (Training)
@@ -65,6 +59,16 @@ Từ thư mục gốc, chạy lệnh sau để khởi động demo:
 Hoặc thay đường dẫn model "--model_name_or_path" vào model sau khi train và tải về từ kaggle.
 
 Sau đó truy cập http://localhost:8888 để sử dụng giao diện demo.
+
+## Video Demo
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=n9DkbQTA2PQ" target="_blank">
+    <img src="https://img.youtube.com/vi/AbC123XyZ90/0.jpg"
+         alt="CS221 Demo Nhóm 8"
+         width="480">
+  </a>
+</p>
+
 
 ## Tham khảo
 Dự án này dựa trên mã nguồn và nghiên cứu từ:
