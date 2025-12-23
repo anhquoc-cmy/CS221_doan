@@ -44,10 +44,11 @@ Chạy 4 file notebook này trên Kaggle là đủ. Không cần cài đặt gì
 Từ thư mục gốc, chạy lệnh sau để khởi động demo:
 
   ```bash
+  # di chuyển vào thư mục demo
   cd demo
-
+  # tải thư viện cần thiết
   pip install -r requirement
-
+  # chạy backend bằng flask
   python flaskdemo.py --model_name_or_path "princeton-nlp/sup-simcse-bert-base-uncased"
   ```
 
