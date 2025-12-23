@@ -62,7 +62,8 @@ Sau đó truy cập http://localhost:8888 để sử dụng giao diện demo.
 
 ## Video Demo
 
-[https://github.com/anhquoc-cmy/CS221_doan.git/main/cs221_demo_nhom8.mp4](https://github.com/anhquoc-cmy/CS221_doan/blob/main/cs221_demo_nhom8.mp4)
+
+https://github.com/anhquoc-cmy/CS221_doan/blob/main/cs221_demo_nhom8.mp4
 
 
 ## Tham khảo
