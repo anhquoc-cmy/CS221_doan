@@ -1,4 +1,4 @@
-# CS221 PROJECT: SimCSE Contrastive Learning of Sentence Embeddings
+<img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/1a132235-5292-4760-b2d5-97b18578e93f" /># CS221 PROJECT: SimCSE Contrastive Learning of Sentence Embeddings
 
 
 🚀 THỰC HIỆN BỞI: NHÓM 8 🚀
@@ -10,7 +10,7 @@ Mục tiêu chính của nhóm là tái hiện lại kết quả huấn luyện 
 
 
 🧠 Huấn luyện mô hình (Training)
-Chạy 4 file notebook trong thư mục train/ trên Kaggle là đủ. Không cần cài đặt gì thêm.
+Chạy 4 file notebook trong thư mục train/ trên Kaggle là đủ. Không cần cài đặt gì thêm. Nhớ bật GPU trên Kaggle 👍
 
 train/ 
 
@@ -21,8 +21,6 @@ train/
       train/unsup_bert.ipynb
       
       train/unsup_roberta.ipynb
-
-
 
 
 🌐 Chạy Demo
