@@ -1,4 +1,4 @@
-<img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/1a132235-5292-4760-b2d5-97b18578e93f" /># CS221 PROJECT: SimCSE Contrastive Learning of Sentence Embeddings
+# CS221 PROJECT: SimCSE Contrastive Learning of Sentence Embeddings
 
 
 🚀 THỰC HIỆN BỞI: NHÓM 8 🚀
