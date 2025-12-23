@@ -9,6 +9,7 @@ Contrastive Learning of Sentence Embeddings
 🧠 Huấn luyện mô hình (Training)
 Chạy 4 file notebook trong thư mục 
 train/ 
+
       train/sup_bert.ipynb
       
       train/sup_roberta.ipynb
