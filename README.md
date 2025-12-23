@@ -10,7 +10,7 @@ Mục tiêu chính của nhóm là tái hiện lại kết quả huấn luyện 
 
 
 🧠 Huấn luyện mô hình (Training)
-Chạy 4 file notebook trong thư mục 
+Chạy 4 file notebook trong thư mục train/ trên Kaggle là đủ. Không cần cài đặt gì thêm.
 train/ 
 
       train/sup_bert.ipynb
@@ -21,7 +21,7 @@ train/
       
       train/unsup_roberta.ipynb
 
-trên Kaggle là đủ. Không cần cài đặt gì thêm.
+
 
 
 🌐 Chạy Demo
