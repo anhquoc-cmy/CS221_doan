@@ -1,9 +1,11 @@
-CS221 PROJECT: SimCSE
-Contrastive Learning of Sentence Embeddings
+CS221 PROJECT: SimCSE Contrastive Learning of Sentence Embeddings
+
 🚀 THỰC HIỆN BỞI: NHÓM 8 🚀
 
 📖 Tổng quan dự án
-Đồ án môn học CS221, tập trung nghiên cứu mô hình SimCSE (Simple Contrastive Learning of Sentence Embeddings). Mục tiêu chính của nhóm là tái hiện lại kết quả huấn luyện theo paper gốc và xây dựng ứng dụng thực tế để kiểm tra chất lượng vector embeddings.
+Đồ án môn học CS221, tập trung nghiên cứu mô hình SimCSE (Simple Contrastive Learning of Sentence Embeddings). 
+
+Mục tiêu chính của nhóm là tái hiện lại kết quả huấn luyện theo paper gốc và xây dựng ứng dụng thực tế để kiểm tra chất lượng vector embeddings.
 
 
 🧠 Huấn luyện mô hình (Training)
