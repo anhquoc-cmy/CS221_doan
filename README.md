@@ -28,7 +28,7 @@ Mục tiêu chính của nhóm là tái hiện lại kết quả huấn luyện 
 
 
 ## Huấn luyện mô hình (Training)
-Chạy 4 file notebook trong thư mục train/ trên Kaggle là đủ. Không cần cài đặt gì thêm.
+Chạy 4 file notebook này trên Kaggle là đủ. Không cần cài đặt gì thêm.
 
 
     train/ 
