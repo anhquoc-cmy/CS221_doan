@@ -1,41 +1,19 @@
-# README
+## Demo
 
-## Giới thiệu
+Chúng tôi cung cấp các bản demo đơn giản để minh họa khả năng của mô hình trong việc tìm kiếm và so sánh độ tương đồng ngữ nghĩa của các câu. Mã nguồn demo nằm trong thư mục `demo/`.
 
-Thư mục này chứa mã nguồn và hướng dẫn huấn luyện 4 mô hình ngôn ngữ dựa trên các biến thể BERT và RoBERTa cho bài toán NLI (Natural Language Inference) sử dụng phương pháp supervised và unsupervised.
+### Flask Demo
+<div align="center">
+  <img src="https://raw.githubusercontent.com/princeton-nlp/SimCSE/main/figure/demo.gif" width="750" alt="Demo Preview">
+</div>
 
-## Hướng dẫn train
+Chúng tôi cung cấp một Web demo dựa trên [Flask](https://github.com/pallets/flask) để hiển thị cách mô hình được sử dụng trực tiếp cho bài toán truy xuất thông tin (information retrieval). 
 
-# CS221 Đồ án: Huấn luyện và Demo Mô hình Ngôn ngữ cho NLI
+Để chạy demo này trên máy cục bộ (local), hãy làm theo các bước sau:
 
-Thư mục này chứa mã nguồn, hướng dẫn huấn luyện và demo cho 4 mô hình ngôn ngữ dựa trên các biến thể BERT và RoBERTa cho bài toán NLI (Natural Language Inference), sử dụng phương pháp học có giám sát (supervised) và không giám sát (unsupervised).
-
-## Liên kết nhanh
-
-- [Tổng quan](#tổng-quan)
-- [Cài đặt môi trường](#cài-đặt-môi-trường)
-- [Cấu trúc thư mục](#cấu-trúc-thư-mục)
-- [Huấn luyện mô hình](#huấn-luyện-mô-hình)
-- [Chạy Demo](#chạy-demo)
-- [Kết quả và So sánh](#kết-quả-và-so-sánh)
-- [Liên hệ](#liên-hệ)
-
-## Tổng quan
-
-Dự án này tập trung vào việc áp dụng và so sánh hiệu quả của các mô hình BERT và RoBERTa trong việc tạo ra các vector biểu diễn câu (sentence embeddings) thông qua bài toán NLI. Chúng tôi cung cấp các notebook để huấn luyện mô hình theo hai hướng tiếp cận:
-* **Supervised**: Sử dụng dữ liệu có nhãn.
-* **Unsupervised**: Sử dụng dữ liệu không nhãn.
-
-## Cài đặt môi trường
-
-Để chạy mã nguồn và demo, bạn cần cài đặt môi trường Python với các thư viện cần thiết.
-
-### Yêu cầu hệ thống
-* Python 3.7+
-* Thư viện: `transformers`, `torch`, `scikit-learn`, `umap-learn`, `matplotlib`, `flask` (cho demo), `gradio` (cho demo).
-
-### Cài đặt
-Chạy lệnh sau để cài đặt tất cả các thư viện phụ thuộc:
-
-```bash
-pip install -r requirements.txt
+1. **Cài đặt thư viện**:
+   Đảm bảo bạn đã cài đặt `flask` và các thư viện yêu cầu:
+   ```bash
+   pip install flask
+   # Cài đặt thêm faiss nếu muốn tăng tốc độ tìm kiếm (tùy chọn)
+   # pip install faiss-cpu
