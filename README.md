@@ -7,7 +7,17 @@ Contrastive Learning of Sentence Embeddings
 
 
 🧠 Huấn luyện mô hình (Training)
-Chạy 4 file notebook trong thư mục train/ (sup_bert.ipynb, sup_roberta.ipynb, unsup_bert.ipynb, unsup_roberta.ipynb) trên Kaggle là đủ. Không cần cài đặt gì thêm.
+Chạy 4 file notebook trong thư mục 
+train/ 
+      train/sup_bert.ipynb
+      
+      train/sup_roberta.ipynb
+      
+      train/unsup_bert.ipynb
+      
+      train/unsup_roberta.ipynb
+
+trên Kaggle là đủ. Không cần cài đặt gì thêm.
 
 
 🌐 Chạy Demo
