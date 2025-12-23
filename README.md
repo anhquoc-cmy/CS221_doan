@@ -12,6 +12,7 @@ Từ thư mục gốc, chạy lệnh sau để khởi động demo:
   ```bash
   cd demo
   pip install -r requirement
+  python setup.py develop
   python python flaskdemo.py --model_name_or_path "princeton-nlp/sup-simcse-bert-base-uncased"
   ```
 
