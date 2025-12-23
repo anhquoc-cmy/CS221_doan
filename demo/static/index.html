@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>SimCSE</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="files/style.css">
+<link rel="shortcut icon" href="files/plogo.png">
+
+<script src="files/all.js"></script>
+<script src="files/jquery-3.3.1.min.js"></script>
+<script src="files/popper.min.js"></script>
+<script src="files/bootstrap.min.js"></script>
+
+
+<body class="bg-light d-flex flex-column min-vh-100">
+<nav class="navbar navbar-expand-md navbar-dark bg-primary shadow-sm">
+    <a class="navbar-brand font-weight-bold" href="">SimCSE Demo</a>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" target="_blank" href="https://arxiv.org/abs/2104.08821">Paper</a></li>
+        <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/princeton-nlp/SimCSE">Code</a></li>
+    </ul>
+</nav>
+
+
+
+<div class="container py-4" id="container">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="card shadow-sm border-0 mb-4" style="border-radius:0;">
+                <div class="card-body" style="border-radius:0;">
+                    <div class="mb-3 d-flex align-items-stretch" style="width:100%;gap:0.5rem;">
+                        <div class="dropdown" style="flex:0 0 auto;">
+                            <button class="btn btn-outline-primary h-100" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="height:100%;">Examples</button>
+                            <div class="dropdown-menu" id="examples"></div>
+                        </div>
+                        <input id="question" type="text" class="form-control h-100" placeholder="Type a sentence..." autocomplete="off" aria-label="Type a sentence" autofocus style="min-width:0;width:100%;height:100%;">
+                        <button id="search" class="btn btn-primary h-100" type="button" style="height:100%;"><i class="fa fa-search"></i></button>
+                    </div>
+                    <div class="row align-items-center mb-2">
+                        <div id="ret-time" class="text-secondary col"></div>
+                        <div class="col-auto">
+                            <label for="top_k" class="mb-0 mr-2">Top K:</label>
+                            <input type="range" class="custom-range" id="top_k" min="1" max="30" value="5" style="width:100px;display:inline-block;vertical-align:middle;">
+                            <span id="top_k_value" class="ml-1">5</span>
+                        </div>
+                        <div class="col-auto">
+                            <label for="threshold" class="mb-0 mr-2">Threshold:</label>
+                            <input type="range" class="custom-range" id="threshold" min="0.0" max="1.0" value="0.6" step="0.01" style="width:100px;display:inline-block;vertical-align:middle;">
+                            <span id="threshold_value" class="ml-1">0.6</span>
+                        </div>
+                    </div>
+                    <div class="card mt-3 border-0 shadow-sm" style="border-radius:0;">
+                        <ul id="ret-results" class="list-group list-group-flush">
+                            <li class="list-group-item"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    var last_timestamp = new Date().getTime();
+
+    $(function(){
+        $('#threshold').bind('input propertychange', function() {  
+            $('#threshold_value').html("Threshold: " + $(this).val());
+            last_timestamp = new Date().getTime(); 
+        }); 
+        $('#top_k').bind('input propertychange', function() {  
+            $('#top_k_value').html("Top K: " + $(this).val()); 
+            last_timestamp = new Date().getTime();
+        });  
+        $('#threshold').on('change', function() {  
+            $("#search").click();
+        }); 
+        $('#top_k').on('change', function() {  
+            $("#search").click();
+        }); 
+    });
+
+    $("#question").keypress(function (e) {
+        if (e.which == 13 || e.which == 63) {
+            $("#search").click();
+        }
+    });
+
+    $("#search").click(function () {
+        var query = $("#question").val();
+        var current_timestamp = new Date().getTime();
+        if (query.trim().length > 0) {
+            execute(query);
+        } else {
+            init_result();
+        }
+    });
+
+    function init_result() {
+        $("#ret-time").text("");
+        $("#ret-results").html("<li class=\"list-group-item\"></li>");
+    }
+
+    function execute(text) {
+        var start_time = +new Date();
+        $.get("/api?query=" + encodeURIComponent(text) + "&topk=" + $("#top_k").val() + "&threshold=" + $("#threshold").val(), function (out) {
+            var end_time = +new Date();
+            var total_latency = end_time - start_time;
+            $("#ret-time").text(out['ret'].length + " results (" + out['time'] + "ms)");
+            $("#ret-results").empty();
+            result = out['ret']
+            for (var i = 0; i < result.length; i++) {
+                $("#ret-results").append("<li class=\"list-group-item\"><div class=\"row\">"
+                    + "<div class=\"col-10\">" + result[i]["sentence"] + "</div>"
+                    + "<div class=\"col-2 text-right\">"
+                        + "<div class=\"score row-1\"> <em>similarity=" + result[i]["score"].toFixed(4) + "</em></div>"
+                    + "</div>"
+                    + "</div></li>")
+            }
+        });
+    }
+
+    $.getJSON("/get_examples", function (examples) {
+        for (let example of examples) {
+            $('#examples').append("<a class=\"dropdown-item\" href=\"#\">" + example + "</a>");
+        }
+    });
+
+    $("#container").on("click", ".dropdown-item", function (event) {
+        $('#question').val($(event.target).text());
+        $('#question').focus();
+        $("#search").click();
+    });
+
+
+</script>
+
+</body>
+
+</html>
