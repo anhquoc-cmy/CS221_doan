@@ -56,7 +56,7 @@ Từ thư mục gốc, chạy lệnh sau để khởi động demo:
   python flaskdemo.py --model_name_or_path "princeton-nlp/sup-simcse-bert-base-uncased"
   ```
 
-Hoặc thay đường dẫn model "--model_name_or_path" vào model sau khi train và tải về từ kaggle.
+Hoặc thay đường dẫn model "--model_name_or_path" vào thư mục chứa model sau khi train và tải về từ kaggle.
 
 Sau đó truy cập http://localhost:8888 để sử dụng giao diện demo.
 
