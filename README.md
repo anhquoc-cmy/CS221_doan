@@ -32,10 +32,10 @@ Chạy 4 file notebook trong thư mục train/ trên Kaggle là đủ. Không c�
 
 
     train/ 
-      train/sup_bert.ipynb
-      train/sup_roberta.ipynb
-      train/unsup_bert.ipynb
-      train/unsup_roberta.ipynb
+      sup_bert.ipynb
+      unsup_bert.ipynb
+      sup_roberta.ipynb
+      unsup_roberta.ipynb
 
 
 
