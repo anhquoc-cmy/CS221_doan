@@ -27,6 +27,14 @@
 Mục tiêu chính của nhóm là tái hiện lại kết quả huấn luyện theo paper gốc và xây dựng giao diện trực quan để kiểm tra kết quả học của model.
 
 
+## Video Demo
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=cs221_demo_nhom8" target="_blank">
+    <img src="https://img.youtube.com/vi/cs221_demo_nhom8/0.jpg" alt="CS221 Demo Nhóm 8" width="480">
+  </a>
+</p>
+
+
 ## Huấn luyện mô hình (Training)
 Chạy 4 file notebook này trên Kaggle là đủ. Không cần cài đặt gì thêm.
 
