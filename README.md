@@ -8,11 +8,11 @@
 <h1 align="center"><b>XỬ LÝ NGÔN NGỮ TỰ NHIÊN</b></h>
 
 ## THÀNH VIÊN NHÓM
-| STT    | MSSV          | Họ và Tên              |Chức Vụ    || Email                   |
-| ------ |:-------------:| ----------------------:|----------:||-------------------------|
-| 1      | 23520774      | Nguyễn Đình Khôi       |Nhóm trưởng||23520774@gm.uit.edu.vn   |
-| 2      | 23520070      | Phạm Ngô Quốc Anh      |Thành viên ||23520070@gm.uit.edu.vn   |
-| 3      | 23520514      | Đoàn Thái Hoàng        |Thành viên ||23520514@gm.uit.edu.vn   |
+| STT | MSSV     | Họ và Tên         | Chức Vụ     | Email                  |
+|-----|----------|-------------------|-------------|------------------------|
+| 1   | 23520774 | Nguyễn Đình Khôi  | Nhóm trưởng | 23520774@gm.uit.edu.vn |
+| 2   | 23520070 | Phạm Ngô Quốc Anh | Thành viên  | 23520070@gm.uit.edu.vn |
+| 3   | 23520514 | Đoàn Thái Hoàng   | Thành viên  | 23520514@gm.uit.edu.vn |
 
 ## GIỚI THIỆU MÔN HỌC
 * **Tên môn học:** Xử lý ngôn ngữ tự nhiên
