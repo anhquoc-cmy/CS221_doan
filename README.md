@@ -61,13 +61,7 @@ Hoặc thay đường dẫn model "--model_name_or_path" vào model sau khi trai
 Sau đó truy cập http://localhost:8888 để sử dụng giao diện demo.
 
 ## Video Demo
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=n9DkbQTA2PQ" target="_blank">
-    <img src="https://img.youtube.com/vi/AbC123XyZ90/0.jpg"
-         alt="CS221 Demo Nhóm 8"
-         width="480">
-  </a>
-</p>
+https://github.com/anhquoc-cmy/CS221_doan.git//main/cs221_demo_nhom8
 
 
 ## Tham khảo
