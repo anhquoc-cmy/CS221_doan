@@ -17,3 +17,7 @@ Chúng tôi cung cấp một Web demo dựa trên [Flask](https://github.com/pal
    pip install flask
    # Cài đặt thêm faiss nếu muốn tăng tốc độ tìm kiếm (tùy chọn)
    # pip install faiss-cpu
+2. **Chạy script khởi động: Sử dụng script run_demo_example.sh để khởi chạy server:**
+  ```bash
+  cd demo
+  bash run_demo_example.sh
