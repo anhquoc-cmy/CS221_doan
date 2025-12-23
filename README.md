@@ -1,4 +1,5 @@
-CS221 PROJECT: SimCSE Contrastive Learning of Sentence Embeddings
+# CS221 PROJECT: SimCSE Contrastive Learning of Sentence Embeddings
+
 
 🚀 THỰC HIỆN BỞI: NHÓM 8 🚀
 
