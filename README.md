@@ -4,36 +4,38 @@
 
 Thư mục này chứa mã nguồn và hướng dẫn huấn luyện 4 mô hình ngôn ngữ dựa trên các biến thể BERT và RoBERTa cho bài toán NLI (Natural Language Inference) sử dụng phương pháp supervised và unsupervised.
 
-## Cấu trúc thư mục
+## Hướng dẫn train
 
-- `code/`
-  - `sup_bert.ipynb`: Notebook huấn luyện mô hình BERT với dữ liệu có giám sát (supervised)
-  - `sup_roberta.ipynb`: Notebook huấn luyện mô hình RoBERTa với dữ liệu có giám sát (supervised)
-  - `unsup_bert.ipynb`: Notebook huấn luyện mô hình BERT với dữ liệu không giám sát (unsupervised)
-  - `unsup_roberta.ipynb`: Notebook huấn luyện mô hình RoBERTa với dữ liệu không giám sát (unsupervised)
-- `model1/`, `model2/`, `model3/`, `model4/`: Thư mục lưu trữ các checkpoint, cấu hình, và kết quả huấn luyện của từng mô hình.
+# CS221 Đồ án: Huấn luyện và Demo Mô hình Ngôn ngữ cho NLI
 
-## Hướng dẫn sử dụng
+Thư mục này chứa mã nguồn, hướng dẫn huấn luyện và demo cho 4 mô hình ngôn ngữ dựa trên các biến thể BERT và RoBERTa cho bài toán NLI (Natural Language Inference), sử dụng phương pháp học có giám sát (supervised) và không giám sát (unsupervised).
 
-1. **Cài đặt môi trường**
-   - Yêu cầu Python 3.7+ và các thư viện: `transformers`, `torch`, `scikit-learn`, `umap-learn`, `matplotlib`, ...
-   - Cài đặt các thư viện cần thiết:
-     ```bash
-     pip install -r requirements.txt
-     ```
-     (Tạo file `requirements.txt` nếu chưa có)
+## Liên kết nhanh
 
-2. **Huấn luyện mô hình**
-   - Mở từng notebook trong thư mục `code/` bằng Jupyter Notebook hoặc JupyterLab.
-   - Chạy tuần tự các cell để huấn luyện mô hình tương ứng.
-   - Kết quả và checkpoint sẽ được lưu trong các thư mục `model1/`, `model2/`, ...
+- [Tổng quan](#tổng-quan)
+- [Cài đặt môi trường](#cài-đặt-môi-trường)
+- [Cấu trúc thư mục](#cấu-trúc-thư-mục)
+- [Huấn luyện mô hình](#huấn-luyện-mô-hình)
+- [Chạy Demo](#chạy-demo)
+- [Kết quả và So sánh](#kết-quả-và-so-sánh)
+- [Liên hệ](#liên-hệ)
 
-3. **So sánh embedding**
-   - Các file HTML như `embedding_comparison_tsne.html`, `embedding_comparison_umap.html` dùng để trực quan hóa và so sánh embedding của các mô hình.
+## Tổng quan
 
-## Ghi chú
-- Các file `config.json`, `tokenizer_config.json`, ... trong thư mục model là cấu hình và trạng thái của mô hình sau khi huấn luyện.
-- Có thể cần điều chỉnh đường dẫn dữ liệu hoặc tham số huấn luyện trong các notebook cho phù hợp với môi trường của bạn.
+Dự án này tập trung vào việc áp dụng và so sánh hiệu quả của các mô hình BERT và RoBERTa trong việc tạo ra các vector biểu diễn câu (sentence embeddings) thông qua bài toán NLI. Chúng tôi cung cấp các notebook để huấn luyện mô hình theo hai hướng tiếp cận:
+* **Supervised**: Sử dụng dữ liệu có nhãn.
+* **Unsupervised**: Sử dụng dữ liệu không nhãn.
 
-## Liên hệ
-Nếu có thắc mắc hoặc cần hỗ trợ, vui lòng liên hệ tác giả dự án.
+## Cài đặt môi trường
+
+Để chạy mã nguồn và demo, bạn cần cài đặt môi trường Python với các thư viện cần thiết.
+
+### Yêu cầu hệ thống
+* Python 3.7+
+* Thư viện: `transformers`, `torch`, `scikit-learn`, `umap-learn`, `matplotlib`, `flask` (cho demo), `gradio` (cho demo).
+
+### Cài đặt
+Chạy lệnh sau để cài đặt tất cả các thư viện phụ thuộc:
+
+```bash
+pip install -r requirements.txt
