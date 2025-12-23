@@ -46,9 +46,11 @@ Từ thư mục gốc, chạy lệnh sau để khởi động demo:
   ```bash
   # di chuyển vào thư mục demo
   cd demo
+
   # tải thư viện cần thiết
-  pip install -r requirement
-  # chạy backend bằng flask
+  pip install -r requirements
+
+  # chạy backend bằng Flask
   python flaskdemo.py --model_name_or_path "princeton-nlp/sup-simcse-bert-base-uncased"
   ```
 
