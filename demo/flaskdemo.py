@@ -73,7 +73,7 @@ if __name__=="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_name_or_path', default=None, type=str)
     parser.add_argument('--device', default='cpu', type=str)
-    parser.add_argument('--sentences_dir', default='demo/static', type=str)
+    parser.add_argument('--sentences_dir', default='static/', type=str)
     parser.add_argument('--example_query', default='example_query.txt', type=str)
     parser.add_argument('--example_sentences', default='example_sentence.txt', type=str)
     parser.add_argument('--port', default='8888', type=str)

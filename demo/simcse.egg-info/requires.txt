@@ -1,0 +1,7 @@
+tqdm
+scikit-learn
+scipy>=1.6
+transformers>=4.2.1
+torch
+numpy>=1.19
+setuptools
