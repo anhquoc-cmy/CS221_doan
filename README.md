@@ -64,7 +64,11 @@ Sau đó truy cập http://localhost:8888 để sử dụng giao diện demo.
 
 Tìm câu tương đồng với câu được nhập vào.
 
-https://github.com/user-attachments/assets/1c74e2ef-8e38-411f-ba6f-957306ccf40a
+
+
+
+https://github.com/user-attachments/assets/8846bd05-64d1-4706-a09c-fdeec99f4593
+
 
 
 
